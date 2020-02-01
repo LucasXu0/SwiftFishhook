@@ -13,6 +13,8 @@
 		2B91FAF623E57503009B02A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B91FAF423E57503009B02A4 /* Main.storyboard */; };
 		2B91FAF823E57506009B02A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B91FAF723E57506009B02A4 /* Assets.xcassets */; };
 		2B91FAFB23E57506009B02A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B91FAF923E57506009B02A4 /* LaunchScreen.storyboard */; };
+		2B91FB0323E57554009B02A4 /* SwiftFishhook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B91FB0223E57554009B02A4 /* SwiftFishhook.swift */; };
+		2B91FB0A23E5B66C009B02A4 /* Replacement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B91FB0923E5B66C009B02A4 /* Replacement.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		2B91FAF723E57506009B02A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B91FAFA23E57506009B02A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B91FAFC23E57506009B02A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B91FB0223E57554009B02A4 /* SwiftFishhook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFishhook.swift; sourceTree = "<group>"; };
+		2B91FB0423E5B4AC009B02A4 /* SwiftFishhook-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftFishhook-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B91FB0823E5B66C009B02A4 /* Replacement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Replacement.h; sourceTree = "<group>"; };
+		2B91FB0923E5B66C009B02A4 /* Replacement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Replacement.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,10 @@
 				2B91FAF723E57506009B02A4 /* Assets.xcassets */,
 				2B91FAF923E57506009B02A4 /* LaunchScreen.storyboard */,
 				2B91FAFC23E57506009B02A4 /* Info.plist */,
+				2B91FB0223E57554009B02A4 /* SwiftFishhook.swift */,
+				2B91FB0423E5B4AC009B02A4 /* SwiftFishhook-Bridging-Header.h */,
+				2B91FB0823E5B66C009B02A4 /* Replacement.h */,
+				2B91FB0923E5B66C009B02A4 /* Replacement.m */,
 			);
 			path = SwiftFishhook;
 			sourceTree = "<group>";
@@ -99,6 +109,7 @@
 				TargetAttributes = {
 					2B91FAEA23E57503009B02A4 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -140,6 +151,8 @@
 			files = (
 				2B91FAF323E57503009B02A4 /* ViewController.swift in Sources */,
 				2B91FAEF23E57503009B02A4 /* AppDelegate.swift in Sources */,
+				2B91FB0A23E5B66C009B02A4 /* Replacement.m in Sources */,
+				2B91FB0323E57554009B02A4 /* SwiftFishhook.swift in Sources */,
 				2B91FAF123E57503009B02A4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftFishhook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -292,6 +306,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xurunkang.SwiftFishhook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftFishhook/SwiftFishhook-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftFishhook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +326,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xurunkang.SwiftFishhook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftFishhook/SwiftFishhook-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

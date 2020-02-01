@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  SwiftFishhook
 //
-//  Created by bytedance on 2020/2/1.
+//  Created by xurunkang on 2020/2/1.
 //  Copyright © 2020 xurunkang. All rights reserved.
 //
 
@@ -15,6 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        let rm_open = uint_t(UInt(bitPattern: replacement_open()))
+        let rd_open = replaced_open().assumingMemoryBound(to: uint_t.self)
+        let rebindings = [
+            "open": Rebinding(replacement: rm_open, replaced: rd_open)
+        ]
+
+        rebindingFunc(rebindings)
+
         return true
     }
 
